@@ -1,0 +1,28 @@
+{
+  "name": "fortnite-tracker",
+  "version": "1.0.0",
+  "description": "An app to track gamers status in fortnite",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosefalnajjarofficial/Fortnite-Tracker.git"
+  },
+  "author": "Yosef Alnajjar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yosefalnajjarofficial/Fortnite-Tracker/issues"
+  },
+  "homepage": "https://github.com/yosefalnajjarofficial/Fortnite-Tracker#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0"
+  }
+}
