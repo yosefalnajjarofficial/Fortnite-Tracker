@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test | tap-spec",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,18 @@
   },
   "homepage": "https://github.com/yosefalnajjarofficial/Fortnite-Tracker#readme",
   "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "morgan": "^1.9.1",
     "nodemon": "^1.19.1",
     "supertest": "^4.0.2",
     "tap-spec": "^5.0.0",
     "tape": "^4.11.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
   }
 }
