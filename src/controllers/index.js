@@ -3,11 +3,10 @@ const express = require('express');
 const router = express.Router();
 
 const request = require('./request');
+const home = require('./home');
 
-router.get('/', (req, res) => {
-  res.send('<h1>Hello World</h1>');
-});
+router.get('/', home);
 
-router.get('/:platform/:nickname', request);
+router.get('/profile/:platform/:nickname', request);
 
 module.exports = router;

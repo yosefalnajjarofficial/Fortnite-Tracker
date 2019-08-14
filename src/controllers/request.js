@@ -13,7 +13,8 @@ const request = (req, res) => {
     headers,
   })
     .then((result) => result.json())
-    .then((result) => res.send(result))
+    .then((result) => res.status(200).render('result'))
+    // .then((result) => console.log(result))
     .catch((err) => res.status(500).send(err));
 };
 
