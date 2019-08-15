@@ -7,6 +7,6 @@ const home = require('./home');
 
 router.get('/', home);
 
-router.get('/profile/:platform/:nickname', request);
+router.get('/profile', request);
 
 module.exports = router;

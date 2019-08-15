@@ -1,2 +1,32 @@
-{{!-- {{this}} --}}
-<h1>res sent</h1>
+<section class="gamer">
+    <h2 class="gamer__name">{{result.epicUserHandle}}</h2>
+    <div class="gamer__wins">
+        <li class="gamer__stats">
+            <span class="gamer__wins-solo">Solo</span>
+            {{result.stats.p2.top1.displayValue}}
+        </li>
+        <li class="gamer__stats">
+            <span class="gamer__wins-dou">Dou</span>
+            {{result.stats.p10.top1.displayValue}}
+        </li>
+        <li class="gamer__stats">
+            <span class="gamer__wins-team">Team</span>
+            {{result.stats.p9.top1.displayValue}}
+        </li>
+    </div>
+    <div class="gamer__extra">
+        <li class="gamer__stats">
+            <span class="gamer__extra__wins">All Wins</span>
+            {{result.lifeTimeStats.8.value}}
+        </li>
+        <li class="gamer__stats">
+            <span class="gamer__extra__kills">Kills</span>
+            {{result.lifeTimeStats.10.value}}
+        </li>
+        <li class="gamer__stats">
+            <span class="gamer__extra__matches">Matches</span>
+            {{result.lifeTimeStats.7.value}}
+        </li>
+    </div>
+</section>
+<h1></h1>

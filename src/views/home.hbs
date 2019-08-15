@@ -1,12 +1,16 @@
-{{> header}}
-{{!-- <form action="" class="main__form"> --}}
-<input type="text" name="gamerName" placeholder="Type your name in the game" class="main__gamer-name">
-<select name="platform" id="platform" class="main__platform">
-    <option disabled value="platform">choose a platform</option>
-    <option value="psn">psn</option>
-    <option value="pc">pc</option>
-    <option value="xbs">x box</option>
-</select>
-<input type="submit" value="Search" class="main__button">
-{{!-- </form> --}}
+<div class="main__avatar"><img class="main__pic" src="https://image.fnbr.co/outfit/5ae8935596f704f42ae909af/png.png"
+        alt="avatar"></div>
+<form action="/profile" class="main__form">
+    <label class="main__title" for="gamerName">Gamer Name</label>
+    <input type="text" name="gamerName" id="gamerName" placeholder="Type your name in the game"
+        class="main__gamer-name">
+    <label class="main__title" for="platform">Your Platform</label>
+    <select name="platform" id="platform" class="main__platform">
+        <option disabled value="platform">choose a platform</option>
+        <option value="psn">PSN</option>
+        <option value="pc">PC</option>
+        <option value="xbl">XBOX</option>
+    </select>
+    <input type="submit" value="Search" class="main__button">
+</form>
 <script src="js/dom.js"></script>

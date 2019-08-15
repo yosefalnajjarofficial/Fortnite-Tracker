@@ -8,13 +8,12 @@ dotenv.config();
 const headers = { 'TRN-Api-Key': process.env.TRACKER_API_KEY };
 
 const request = (req, res) => {
-  const { platform, nickname } = req.params;
-  fetch(`${process.env.TRACKER_API_URL}/profile/${platform}/${nickname}`, {
+  const { platform, gamerName } = req.query;
+  fetch(`${process.env.TRACKER_API_URL}/profile/${platform}/${gamerName}`, {
     headers,
   })
     .then((result) => result.json())
-    .then((result) => res.status(200).render('result'))
-    // .then((result) => console.log(result))
+    .then((result) => res.status(200).render('result', { result }))
     .catch((err) => res.status(500).send(err));
 };
 
